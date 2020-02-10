@@ -9,7 +9,9 @@
 import UIKit
 
 class RegularTableCell: UITableViewCell {
-
+    @IBOutlet weak var imgView: UIImageView!
+    
+    @IBOutlet weak var titleView: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

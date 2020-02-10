@@ -9,7 +9,9 @@
 import UIKit
 
 class FullGraphTableCell: UITableViewCell {
-
+    @IBOutlet weak var titleView: UILabel!
+    @IBOutlet weak var imgView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

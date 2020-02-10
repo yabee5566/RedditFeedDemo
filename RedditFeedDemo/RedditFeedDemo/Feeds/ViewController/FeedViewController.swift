@@ -9,7 +9,6 @@
 import UIKit
 
 class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-   
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -25,16 +24,13 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return 10
     }
 
-    // Test custom tableview with 2 style tableViewCell
-    //TODO: Replace this
+   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row % 2 == 0 {
+        if indexPath.row % 4 == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FullGraphTableCell") as! FullGraphTableCell
-            // Set up cell.label
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "RegularTableCell") as! RegularTableCell
-            // Set up cell.button
             return cell
         }
     }
@@ -42,12 +38,10 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     // Test custom tableview with 2 height
     //TODO: Replace this
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row % 2 == 0 {
-            return 200
+        if indexPath.row % 4 == 0 {
+            return 154
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "RegularTableCell") as! RegularTableCell
-            // Set up cell.button
-            return 100
+            return 116
         }
     }
 }
