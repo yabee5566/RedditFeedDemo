@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Display reddit feeds in tableview
 class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,11 +22,13 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // TODO: Populate real data in
         return 10
     }
 
    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // TODO: Populate real data in
         if indexPath.row % 4 == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FullGraphTableCell") as! FullGraphTableCell
             return cell
@@ -36,7 +39,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     // Test custom tableview with 2 height
-    //TODO: Replace this
+   // TODO: Populate real data in
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row % 4 == 0 {
             return 154
