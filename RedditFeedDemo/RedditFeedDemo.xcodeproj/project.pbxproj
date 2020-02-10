@@ -103,12 +103,11 @@
 			children = (
 				A13EA1B423F1062400E29E7A /* AppDelegate.swift */,
 				A13EA1B623F1062400E29E7A /* SceneDelegate.swift */,
-				A13EA1B823F1062400E29E7A /* FeedViewController.swift */,
+				A13EA1F023F134BE00E29E7A /* Feeds */,
 				A13EA1C023F1062500E29E7A /* Assets.xcassets */,
 				A13EA1C223F1062500E29E7A /* LaunchScreen.storyboard */,
 				A13EA1C523F1062500E29E7A /* Info.plist */,
 				A13EA1BD23F1062400E29E7A /* RedditFeedDemo.xcdatamodeld */,
-				A13EA1E723F10C3E00E29E7A /* FeedViewController.xib */,
 			);
 			path = RedditFeedDemo;
 			sourceTree = "<group>";
@@ -129,6 +128,31 @@
 				A13EA1DB23F1062500E29E7A /* Info.plist */,
 			);
 			path = RedditFeedDemoUITests;
+			sourceTree = "<group>";
+		};
+		A13EA1EE23F1346300E29E7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A13EA1EF23F134A300E29E7A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A13EA1B823F1062400E29E7A /* FeedViewController.swift */,
+				A13EA1E723F10C3E00E29E7A /* FeedViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A13EA1F023F134BE00E29E7A /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				A13EA1EF23F134A300E29E7A /* ViewController */,
+				A13EA1EE23F1346300E29E7A /* View */,
+			);
+			path = Feeds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
